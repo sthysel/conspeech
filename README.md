@@ -8,7 +8,7 @@ Link to original paper: http://arxiv.org/abs/1601.03313
 The conspeach script will fecth and run the container when invoked.
 
 ``` sh
-$ sudo -L https://raw.githubusercontent.com/sthysel/conspeach/master/conspeech > /usr/local/bin/conspeech
+$ sudo curl -L https://raw.githubusercontent.com/sthysel/conspeach/master/conspeech > /usr/local/bin/conspeech
 $ sudo chmod +x /usr/local/bin/conspeech
 ```
 
