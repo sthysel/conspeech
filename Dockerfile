@@ -18,8 +18,12 @@ RUN pip install --upgrade pip
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
 
+RUN mkdir /data \
+        && curl -SL https://www.cs.cornell.edu/home/llee/data/convote/convote_v1.1.tar.gz \
+        | tar -xzC /data/
+
 COPY ./app /app
 WORKDIR /app
 
-CMD ["python.py", "demo.py", "RY", "0.25"]
+CMD ["python", "demo.py", "RY", "0.25"]
 
