@@ -4,7 +4,7 @@ Link to original paper: http://arxiv.org/abs/1601.03313
 
 
 ## Install to run from container
-conspeach is available as a Docker container from dockerhub.
+```conspeech``` is available as a Docker container from dockerhub.
 The conspeach script will fecth and run the container when invoked.
 
 ``` sh
