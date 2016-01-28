@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+VERSION="latest"
+IMAGE="sthysel/conspeech:$VERSION"
+
+exec docker run --rm -ti $IMAGE $@
